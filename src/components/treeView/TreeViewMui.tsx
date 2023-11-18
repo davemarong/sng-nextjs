@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { TreeView as TreeViewMUI } from "@mui/x-tree-view/TreeView";
+import { TreeView } from "@mui/x-tree-view/TreeView";
 import { TreeItem } from "@mui/x-tree-view/TreeItem";
 
 interface TreeViewProps {
   setFilters: (value: any) => void;
 }
-function TreeView({ setFilters }: TreeViewProps) {
+function TreeViewMUI({ setFilters }: TreeViewProps) {
   return (
-    <TreeViewMUI
+    <TreeView
       aria-label="multi-select"
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
@@ -22,7 +22,7 @@ function TreeView({ setFilters }: TreeViewProps) {
       <TreeItem nodeId="1" label="Applications">
         <TreeItem
           onClick={(e) => {
-            console.log(e.target.textContent);
+            // console.log(e.target.textContent);
           }}
           nodeId="2"
           label="Calendar"
@@ -38,8 +38,8 @@ function TreeView({ setFilters }: TreeViewProps) {
           </TreeItem>
         </TreeItem>
       </TreeItem>
-    </TreeViewMUI>
+    </TreeView>
   );
 }
 
-export default TreeView;
+export default TreeViewMUI;

@@ -8,17 +8,17 @@ interface ButtonsProps {
 const Buttons = ({ setPage, page }: ButtonsProps) => {
   return (
     <div className="flex">
-      <Typography>Page {page}</Typography>
       <Button
-        variant="outlined"
+        variant="text"
         onClick={() => {
           setPage(page - 1);
         }}
       >
         Back page {"<"}-
       </Button>
+      <Typography variant="body1">Page {page}</Typography>
       <Button
-        variant="outlined"
+        variant="text"
         onClick={() => {
           setPage(page + 1);
         }}
