@@ -9,7 +9,7 @@ const HeroImage = () => {
       </h1>
       <Button
         variant="outlined"
-        className="bg-lightest-gray text-black hover:bg-dark-gray hover:text-white border-0 hover:border-0 w-52 h-12 m-4"
+        className="bg-gray-100 text-black hover:bg-gray-700 hover:text-white border-0 hover:border-0 w-52 h-12 m-4"
       >
         Kontakt Oss
       </Button>

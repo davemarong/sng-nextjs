@@ -5,10 +5,11 @@ import Grid from "@mui/material/Grid";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../logo/Logo";
+import PrimaryButton from "../buttons/PrimaryButton";
 const Nav = () => {
   return (
     <Grid
-      className="px-16 bg-darkest-gray"
+      className="px-16 bg-gray-900"
       container
       justifyContent="space-evenly"
       wrap="nowrap"
@@ -36,9 +37,7 @@ const Nav = () => {
         })}
       </Grid>
       <Grid item xs={2}>
-        <Button variant="outlined" className="bg-lightest-gray">
-          Kontakt Oss
-        </Button>
+        <PrimaryButton>Kontakt Oss</PrimaryButton>
       </Grid>
     </Grid>
   );

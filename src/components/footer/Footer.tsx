@@ -9,7 +9,7 @@ import PrimaryButton from "../buttons/PrimaryButton";
 const Footer = () => {
   return (
     <>
-      <div className="bg-darkest-gray flex items-center justify-between py-12 px-20">
+      <div className="bg-gray-900 flex items-center justify-between py-12 px-20">
         <div className="flex-1">
           <Logo />
         </div>
@@ -36,8 +36,8 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-black h-100 flex justify-between items-center px-10">
-        <p className="lightest ">Copyright SNG 2023</p>
-        <p className="lighter">Marong utvikling</p>
+        <p className="text-gray-500 ">Copyright SNG 2023</p>
+        <p className="text-gray-500">Marong utvikling</p>
         <div>
           <CircleIcon className="text-white" />
           <CircleIcon className="text-white" />

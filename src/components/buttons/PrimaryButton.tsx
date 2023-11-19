@@ -6,12 +6,9 @@ interface PrimaryButtonProps {
 }
 const PrimaryButton = ({ children }: PrimaryButtonProps) => {
   return (
-    <Button
-      variant="outlined"
-      className="bg-lightest-gray text-black hover:bg-darkest-gray hover:text-white border-0 hover:border-0 w-52 h-12 m-4"
-    >
+    <button className="transition-colors duration-200 rounded bg-gray-100 text-black hover:bg-gray-900 hover:text-white border-0 hover:border-0 w-52 h-12 ">
       {children}
-    </Button>
+    </button>
   );
 };
 

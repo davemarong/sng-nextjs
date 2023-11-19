@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -9,18 +10,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "text-lightest": "#d1d5db",
-        "text-lighter": "#6b7280",
-        "darkest-gray": "#273444",
-        "dark-gray": "#8492a6",
-        gray: "#d3dce6",
-        "light-gray": "#f0f4f8",
-        "lightest-gray": "#f8fafc",
+        primary: colors.red,
       },
       backgroundImage: {
         hero: "url('/hero.jpg')",
         hero1: "url('/hero1.jpg')",
-        "footer-texture": "url('/img/footer-texture.png')",
       },
     },
   },

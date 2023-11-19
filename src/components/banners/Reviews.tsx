@@ -18,7 +18,7 @@ const Reviews = () => {
             />
           </div>
           <FormatQuoteIcon />
-          <p className="lighter max-w-sm py-4">
+          <p className="gray-300 max-w-sm py-4">
             I love SNG because their leaders are progressive, and they always
             want to satisfy my needs.
           </p>
@@ -36,7 +36,7 @@ const Reviews = () => {
             />
           </div>
           <FormatQuoteIcon />
-          <p className="lighter max-w-sm py-4">
+          <p className="gray-300 max-w-sm py-4">
             I love SNG because their leaders are progressive, and they always
             want to satisfy my needs.
           </p>
@@ -54,7 +54,7 @@ const Reviews = () => {
             />
           </div>
           <FormatQuoteIcon />
-          <p className="lighter max-w-sm py-4">
+          <p className="gray-300 max-w-sm py-4">
             I love SNG because their leaders are progressive, and they always
             want to satisfy my needs.
           </p>
