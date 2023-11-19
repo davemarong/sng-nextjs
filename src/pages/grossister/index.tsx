@@ -11,7 +11,26 @@ import Image from "next/image";
 import FitbitIcon from "@mui/icons-material/Fitbit";
 import DiamondIcon from "@mui/icons-material/Diamond";
 import PlaceIcon from "@mui/icons-material/Place";
+import MapContainer from "@/components/maps/MapContainer";
 const Grossister = () => {
+  const bounds = {
+    west: 4.6308,
+    south: 57.7666,
+    east: 31.0586,
+    north: 71.1883,
+  };
+
+  const mapOptions = {
+    styles: [
+      {
+        featureType: "poi",
+        elementType: "labels",
+        stylers: [{ visibility: "off" }],
+      },
+    ],
+    restriction: { latLngBounds: bounds, strictBounds: false },
+  };
+
   return (
     <div>
       <div className="bg-hero bg-cover h-500 flex justify-center items-center">
@@ -78,6 +97,7 @@ const Grossister = () => {
           );
         })}
       </div>
+      <MapContainer mapOptions={mapOptions} zoom={5} />
     </div>
   );
 };

@@ -4,11 +4,11 @@ export const navItemsPublic = [
     path: "/",
     color: "transparent",
   },
-  {
-    label: "Produkter",
-    path: "/produkter",
-    color: "transparent",
-  },
+  // {
+  //   label: "Produkter",
+  //   path: "/produkter",
+  //   color: "transparent",
+  // },
   {
     label: "Grossister",
     path: "/grossister",

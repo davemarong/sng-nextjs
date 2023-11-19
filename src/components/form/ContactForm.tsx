@@ -4,6 +4,7 @@ import PrimaryButton from "../buttons/PrimaryButton";
 const ContactForm = () => {
   return (
     <form className="max-w-4xl gap-6 flex flex-wrap">
+      <p className="text-gray-500">Noe du lurer på? Send oss en melding!</p>
       <div className="w-full">
         <label htmlFor="Fornavn">Fornavn</label>
         <input

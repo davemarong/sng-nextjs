@@ -4,8 +4,8 @@ import React from "react";
 const HeroImage = () => {
   return (
     <div className="bg-hero bg-cover h-800 w-full flex justify-center items-center flex-col">
-      <h1 className="text-white text-6xl  text-center">
-        Fordi SNG mener du er verdt det
+      <h1 className="text-white text-6xl text-center my-10">
+        Sammen blir vi sterke!
       </h1>
       <Button
         variant="outlined"
