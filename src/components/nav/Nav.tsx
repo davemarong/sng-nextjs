@@ -8,7 +8,7 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const path = useRouter().pathname;
   return (
-    <nav className="flex items-center justify-between flex-wrap p-2 bg-gray-800 px-12">
+    <nav className="flex items-center justify-between flex-wrap p-2 bg-gray-800 px-20">
       <div className="w-52 mb-4">
         <Logo />
       </div>

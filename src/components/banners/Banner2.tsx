@@ -7,7 +7,7 @@ const Banner2 = () => (
     <h3 className="text-3xl">Fra oss kan du nyte følgende</h3>
     <div className="flex flex-col gap-14 lg:gap-28 my-12 ml-7 lg:flex-row">
       <div className="flex-1">
-        <h4 className="text-xl font-medium text-left max-w-xs">
+        <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
           Et flott arbeidsmiljø
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 text-base max-w-xs">
@@ -17,7 +17,7 @@ const Banner2 = () => (
         </p>
       </div>
       <div className="flex-1">
-        <h4 className="text-xl font-medium text-left max-w-xs">
+        <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
           Konkurransedyktige lønninger
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 max-w-xs">
@@ -27,7 +27,7 @@ const Banner2 = () => (
         </p>
       </div>
       <div className="flex-1">
-        <h4 className="text-xl font-medium text-left max-w-xs">
+        <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
           Fordeler for ansatte
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 text-base max-w-xs">
@@ -36,7 +36,6 @@ const Banner2 = () => (
         </p>
       </div>
     </div>
-    {/* <PrimaryButton>Våre tilbud</PrimaryButton> */}
   </div>
 );
 

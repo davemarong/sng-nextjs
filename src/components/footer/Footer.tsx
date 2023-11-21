@@ -42,14 +42,14 @@ const Footer = () => {
           <PrimaryButton>Kontakt oss</PrimaryButton>
         </div>
       </div>
-      <div className="bg-gray-900 h-100 flex justify-between items-center px-10">
-        <p className="text-gray-500 ">Copyright SNG 2023</p>
-        <p className="text-gray-500">Marong utvikling</p>
-        <div>
+      <div className="bg-gray-900 h-100 flex justify-between items-center px-20">
+        <p className="text-gray-500 text-sm">Copyright SNG 2023</p>
+        <p className="text-gray-500 text-sm">Marong Utvikling</p>
+        {/* <div>
           <CircleIcon className="text-white" />
           <CircleIcon className="text-white" />
           <CircleIcon className="text-white" />
-        </div>
+        </div> */}
       </div>
     </>
   );
