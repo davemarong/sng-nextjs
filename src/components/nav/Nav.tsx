@@ -8,8 +8,8 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const path = useRouter().pathname;
   return (
-    <nav className="flex items-center justify-between flex-wrap p-2 bg-gray-800 px-20">
-      <div className="w-52 mb-4">
+    <nav className="flex items-center justify-between flex-wrap p-2 px-6 bg-gray-800 lg:px-20 ">
+      <div className="w-36 lg:w-52 mb-4">
         <Logo />
       </div>
       <div className="block sm:hidden">

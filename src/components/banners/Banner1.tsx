@@ -7,7 +7,7 @@ import LightPrimaryButton from "../buttons/LightPrimaryButton";
 const Banner = () => {
   return (
     <div className="bg-gray-800 py-24 w-full flex justify-center items-center flex-col">
-      <h2 className="text-center mb-10 max-w-screen-lg text-4xl text-white">
+      <h2 className="text-center mb-10 mx-8 text-2xl max-w-screen-lg lg:text-4xl text-white">
         Vi er en skandinavisk bedrift, og vi er glade for å betjene deg. Besøk
         oss.
       </h2>

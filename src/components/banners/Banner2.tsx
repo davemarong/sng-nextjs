@@ -3,8 +3,8 @@ import React from "react";
 import PrimaryButton from "../buttons/PrimaryButton";
 
 const Banner2 = () => (
-  <div className="font-sans bg-white py-24 text-center flex flex-col justify-center items-center">
-    <h3 className="text-3xl">Fra oss kan du nyte følgende</h3>
+  <div className="font-sans bg-white py-24 mx-8 text-center flex flex-col justify-center items-center">
+    <h3 className="text-2xl">Fra oss kan du nyte følgende</h3>
     <div className="flex flex-col gap-14 lg:gap-28 my-12 ml-7 lg:flex-row">
       <div className="flex-1">
         <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">

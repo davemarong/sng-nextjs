@@ -5,7 +5,7 @@ import colors from "tailwindcss/colors";
 
 const Reviews = () => {
   return (
-    <div className="my-20">
+    <div className="my-20 mx-8">
       <h2 className="text-center text-3xl pb-10">
         Vi tar vare på våre grossister
       </h2>
