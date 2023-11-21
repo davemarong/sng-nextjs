@@ -3,9 +3,9 @@ import React from "react";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 const Reviews = () => {
   return (
-    <div className="h-500">
-      <h2 className="text-center text-3xl py-14">Vi tar vare på deg</h2>
-      <div className="flex justify-center items-center">
+    <div className="my-20">
+      <h2 className="text-center text-3xl pb-10">Vi tar vare på deg</h2>
+      <div className="flex gap-28 flex-col justify-center items-center lg:flex-row">
         <div className="flex flex-col items-center text-center">
           <div className="rounded-full overflow-hidden w-100 h-100">
             <Image
@@ -19,8 +19,8 @@ const Reviews = () => {
           </div>
           <FormatQuoteIcon />
           <p className="gray-300 max-w-sm py-4">
-            I love SNG because their leaders are progressive, and they always
-            want to satisfy my needs.
+            Jeg elsker SNG fordi lederne deres er progressive, og de vil alltid
+            tilfredsstille mine behov.
           </p>
           <p className="bold">Jonas Anderosn</p>
         </div>
@@ -37,8 +37,8 @@ const Reviews = () => {
           </div>
           <FormatQuoteIcon />
           <p className="gray-300 max-w-sm py-4">
-            I love SNG because their leaders are progressive, and they always
-            want to satisfy my needs.
+            Jeg elsker SNG fordi lederne deres er progressive, og de vil alltid
+            tilfredsstille mine behov.
           </p>
           <p className="bold">Jonas Anderosn</p>
         </div>
@@ -55,8 +55,8 @@ const Reviews = () => {
           </div>
           <FormatQuoteIcon />
           <p className="gray-300 max-w-sm py-4">
-            I love SNG because their leaders are progressive, and they always
-            want to satisfy my needs.
+            Jeg elsker SNG fordi lederne deres er progressive, og de vil alltid
+            tilfredsstille mine behov.
           </p>
           <p className="bold">Jonas Anderosn</p>
         </div>

@@ -1,42 +1,42 @@
 import { Button } from "@mui/material";
 import React from "react";
+import PrimaryButton from "../buttons/PrimaryButton";
 
 const Banner2 = () => (
-  <div className="bg-gray-300-white h-500 text-center flex flex-col justify-center items-center">
-    <h3 className="text-3xl">From us, you can enjoy the following</h3>
-    <div className="flex gap-28 my-12 ml-7">
+  <div className="font-sans bg-white py-24 text-center flex flex-col justify-center items-center">
+    <h3 className="text-3xl">Fra oss kan du nyte følgende</h3>
+    <div className="flex flex-col gap-14 lg:gap-28 my-12 ml-7 lg:flex-row">
       <div className="flex-1">
         <h4 className="text-xl font-medium text-left max-w-xs">
-          A great working environment
+          Et flott arbeidsmiljø
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 text-base max-w-xs">
-          We dont want you to dread Mondays or coming to work daily.Thats why we
-          create a safe and productive work environment where you can achieve
-          your full potential.
+          Vi vil ikke at du skal grue deg til mandager eller til å komme på jobb
+          daglig. Derfor skaper vi et trygt og produktivt arbeidsmiljø der du
+          kan oppnå ditt fulle potensiale.
         </p>
       </div>
       <div className="flex-1">
         <h4 className="text-xl font-medium text-left max-w-xs">
-          Competitive salaries
+          Konkurransedyktige lønninger
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 max-w-xs">
-          Here at SNG, we pay you what you deserve or even more. As long as you
-          help us achieve our goals, well keep changing the world together.
+          Her hos SNG betaler vi deg det du fortjener eller enda mer. Så lenge
+          du hjelper oss med å nå våre mål, vil vi fortsette å forandre verden
+          sammen.
         </p>
       </div>
       <div className="flex-1">
         <h4 className="text-xl font-medium text-left max-w-xs">
-          Employee benefits
+          Fordeler for ansatte
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 text-base max-w-xs">
-          We also provide benefits such as overtime compensation, paid time off,
-          and minimum wage.
+          Vi tilbyr også fordeler som overtidskompensasjon, betalt fri, og
+          minstelønn.
         </p>
       </div>
     </div>
-    <Button className="bg-gray text-black hover:bg-gray-900 hover:text-white border-0 hover:border-0 w-52 h-12 m-4">
-      Våre tilbud
-    </Button>
+    {/* <PrimaryButton>Våre tilbud</PrimaryButton> */}
   </div>
 );
 

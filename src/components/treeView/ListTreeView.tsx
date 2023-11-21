@@ -52,7 +52,7 @@ const ListTreeView = () => {
                   inputProps={{ "aria-labelledby": labelId }}
                 />
               </ListItemIcon>
-              <ListItemText id={labelId} primary={`Line item ${value + 1}`} />
+              <ListItemText id={labelId} gray={`Line item ${value + 1}`} />
             </ListItemButton>
           </ListItem>
         );

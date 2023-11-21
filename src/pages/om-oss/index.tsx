@@ -1,5 +1,3 @@
-"use client";
-import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import React from "react";
 const OmOss = () => {
@@ -10,7 +8,7 @@ const OmOss = () => {
           Fordi SNG mener du er verdt det
         </h1>
       </div>
-      <div className="mx-40">
+      <div className="mx-10 2xl:mx-40">
         <h2 className="text-center mt-28 mb-16">Scandinavian Nasar Group</h2>
         <div className="flex justify-center">
           <p className="max-w-2xl text-center">
@@ -23,10 +21,16 @@ const OmOss = () => {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="flex my-28 gap-28">
-          <Image src="/omoss1.jpg" height={600} width={600} alt="" />
+        <div className="flex-col 2xl:flex-row justify-center flex my-14 gap-16 2xl:my-28 2xl:gap-28 2xl:items-center">
+          <Image
+            src="/omoss1.jpg"
+            height={600}
+            width={600}
+            alt=""
+            className="m-auto"
+          />
           <div>
-            <h2 className="text-center mt-28 mb-16">Hva gjør vi?</h2>
+            <h2 className="text-center mb-8">Hva gjør vi?</h2>
             <div className="flex justify-center">
               <p className="max-w-xl text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -40,9 +44,9 @@ const OmOss = () => {
             </div>
           </div>
         </div>
-        <div className="flex my-28 gap-28">
+        <div className="flex-col-reverse 2xl:flex-row flex my-14 gap-16 2xl:my-28 2xl:gap-28 2xl:items-center ">
           <div>
-            <h2 className="text-center mt-28 mb-16">Vår historie</h2>
+            <h2 className="text-center mb-8">Vår historie</h2>
             <div className="flex justify-center">
               <p className="max-w-xl text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,7 +59,13 @@ const OmOss = () => {
               </p>
             </div>
           </div>
-          <Image src="/omoss2.jpg" height={600} width={600} alt="" />
+          <Image
+            src="/omoss2.jpg"
+            height={600}
+            width={600}
+            alt=""
+            className="m-auto"
+          />
         </div>
       </div>
     </div>
