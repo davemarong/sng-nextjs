@@ -4,19 +4,12 @@ import MapContainer from "@/components/maps/MapContainer";
 import React from "react";
 
 const Kontakt = () => {
-  const mapOptions = {
-    styles: [
-      {
-        featureType: "poi",
-        elementType: "labels",
-        stylers: [{ visibility: "off" }],
-      },
-    ],
-  };
   return (
     <div>
-      <div className="bg-hero1 bg-cover h-600 w-full flex justify-center items-center flex-col">
-        <h1 className="text-white text-6xl  text-center">Kontakt oss</h1>
+      <div className="bg-nature3 bg-cover h-600 w-full flex justify-center items-center flex-col">
+        <div className="backdrop-brightness-50 h-full w-full flex justify-center items-center flex-col">
+          <h1 className="text-white text-6xl  text-center">Kontakt oss</h1>
+        </div>
       </div>
       <div className="flex bg-gray-100">
         <div className="flex-1 flex flex-col gap-16 justify-start items-center mt-10">

@@ -3,10 +3,12 @@ import React from "react";
 const OmOss = () => {
   return (
     <div>
-      <div className="bg-hero1 bg-black bg-cover h-600 w-full flex justify-center items-center flex-col">
-        <h1 className="text-white text-6xl  text-center">
-          Fordi SNG mener du er verdt det
-        </h1>
+      <div className="bg-nature2 bg-black bg-cover h-600 w-full flex justify-center items-center flex-col">
+        <div className="backdrop-brightness-50 h-full w-full flex justify-center items-center flex-col">
+          <h1 className="text-white text-6xl  text-center">
+            Fordi SNG mener du er verdt det
+          </h1>
+        </div>
       </div>
       <div className="mx-10 2xl:mx-40">
         <h2 className="text-center mt-28 mb-16">Scandinavian Nasar Group</h2>
@@ -31,7 +33,7 @@ const OmOss = () => {
           />
           <div>
             <h2 className="text-center mb-8">Hva gjør vi?</h2>
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
               <p className="max-w-xl text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -44,7 +46,7 @@ const OmOss = () => {
             </div>
           </div>
         </div>
-        <div className="flex-col-reverse 2xl:flex-row flex my-14 gap-16 2xl:my-28 2xl:gap-28 2xl:items-center ">
+        <div className="flex-col-reverse 2xl:flex-row flex py-14 gap-16 2xl:py-28 2xl:gap-28 2xl:items-center ">
           <div>
             <h2 className="text-center mb-8">Vår historie</h2>
             <div className="flex justify-center">

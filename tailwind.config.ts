@@ -36,6 +36,9 @@ const config: Config = {
       backgroundImage: {
         hero: "url('/hero.jpg')",
         hero1: "url('/hero1.jpg')",
+        nature: "url('/nature.jpg')",
+        nature2: "url('/nature2.jpg')",
+        nature3: "url('/nature3.jpg')",
       },
     },
   },
