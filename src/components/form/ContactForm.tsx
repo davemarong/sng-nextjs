@@ -7,6 +7,7 @@ const ContactForm = () => {
     <form
       data-netlify="true"
       id="contactForm"
+      method="post"
       // method="post"
       // action="https://formsubmit.co/kmarong@hotmail.com"
       className="max-w-4xl gap-6 flex flex-wrap"
