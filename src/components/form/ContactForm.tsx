@@ -28,9 +28,10 @@ const ContactForm = () => {
     );
   return (
     <form
+      data-netlify="true"
       id="contactForm"
-      method="post"
-      action="https://formsubmit.co/kmarong@hotmail.com"
+      // method="post"
+      // action="https://formsubmit.co/kmarong@hotmail.com"
       className="max-w-4xl gap-6 flex flex-wrap"
     >
       {/* <p className="text-gray-500">Ønsker du å bli en av oss?</p> */}
