@@ -89,11 +89,11 @@ const ContactForm = () => {
       <button
         className="transition-colors duration-200 rounded bg-primary-500 text-black hover:bg-primary-700 active:bg-primary-900 hover:text-white border-0 hover:border-0 w-52 h-12 "
         type="submit"
-        onClick={() => {
-          setLoading(true);
-          const form: any = document.getElementById("contactForm");
-          form.submit();
-        }}
+        // onClick={() => {
+        // setLoading(true);
+        // const form: any = document.getElementById("contactForm");
+        // form.submit();
+        // }}
       >
         Send melding
       </button>
