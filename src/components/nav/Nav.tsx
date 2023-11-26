@@ -53,7 +53,7 @@ const Nav = () => {
           );
         })}
       </div>
-      <Link href="" className="w-52 hidden lg:block">
+      <Link href="/kontakt" className="w-52 hidden lg:block">
         <LightPrimaryButton>Kontakt Oss</LightPrimaryButton>
       </Link>
     </nav>

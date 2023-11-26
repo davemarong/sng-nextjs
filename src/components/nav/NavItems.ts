@@ -19,9 +19,9 @@ export const navItemsPublic = [
   //   path: "/om-oss",
   //   color: "transparent",
   // },
-  // {
-  //   label: "Kontakt",
-  //   path: "/kontakt",
-  //   color: "transparent",
-  // },
+  {
+    label: "Kontakt",
+    path: "/kontakt",
+    color: "transparent",
+  },
 ];
