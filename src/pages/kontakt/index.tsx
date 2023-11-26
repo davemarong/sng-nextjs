@@ -1,6 +1,5 @@
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import ContactForm from "@/components/form/ContactForm";
-import MapContainer from "@/components/maps/MapContainer";
 import React from "react";
 
 const Kontakt = () => {
