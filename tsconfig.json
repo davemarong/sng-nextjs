@@ -21,7 +21,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/pages/api/contact/contact.s"
+    "src/pages/api/contact/contact.s",
+    "src/utils/query/utils.js"
   ],
   "exclude": ["node_modules"]
 }
