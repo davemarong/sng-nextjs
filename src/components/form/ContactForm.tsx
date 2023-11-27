@@ -3,40 +3,62 @@ import Loading from "../loading/Loading";
 
 const ContactForm = () => {
   const [loading, setLoading] = useState(false);
+
+  const [formData, setFormData] = useState({
+    fornavn: "",
+    etternavn: "",
+    bedrift: "",
+    email: "",
+    melding: "",
+  });
+
+  const handleInputChange = (e: any) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleFormSubmit = async (e: any) => {
+    e.preventDefault();
+    console.log(formData);
+
+    try {
+      const response = await fetch("/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+        body: new URLSearchParams(formData).toString(),
+      });
+
+      if (response.ok) {
+        // Handle success
+        console.log("Form submitted successfully");
+      } else {
+        // Handle error
+        console.error("Form submission failed");
+      }
+    } catch (error) {
+      console.error("Error during form submission:", error);
+    }
+  };
   return (
     <form
       data-netlify="true"
       method="post"
-      name="contactForm"
-      // method="post"
-      // action="https://formsubmit.co/kmarong@hotmail.com"
+      name="contact"
       className="max-w-4xl gap-6 flex flex-wrap"
+      netlify-honeypot="bot-field"
+      onSubmit={handleFormSubmit}
     >
-      {/* <p className="text-gray-500">Ønsker du å bli en av oss?</p> */}
+      <input type="hidden" name="form-name" value="contact" />
+
       <div className="w-full">
-        <input
-          type="hidden"
-          name="_autoresponse"
-          value="Her er en kopi fra din melding til SNG"
-        />
-
-        <input
-          type="hidden"
-          name="_subject"
-          value="SNG kontakt skjema - melding"
-        />
-
-        <input
-          type="hidden"
-          name="_next"
-          value="http://localhost:3000/kontakt"
-        />
-
         <label htmlFor="Fornavn">Fornavn</label>
         <input
           id="Fornavn"
           type="text"
-          name="Fornavn"
+          name="fornavn"
+          onChange={handleInputChange}
+          value={formData.fornavn}
           className="bg-gray-100 border border-gray text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
           placeholder="Ola"
           required
@@ -48,6 +70,8 @@ const ContactForm = () => {
           id="Etternavn"
           name="etternavn"
           type="text"
+          value={formData.etternavn}
+          onChange={handleInputChange}
           className="bg-gray-100 border border-gray text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
           placeholder="Nordmann"
           required
@@ -59,6 +83,8 @@ const ContactForm = () => {
           name="bedrift"
           id="Bedrift"
           type="text"
+          value={formData.bedrift}
+          onChange={handleInputChange}
           className="bg-gray-100 border border-gray text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
           placeholder="Bedriftsnavn"
           required
@@ -70,6 +96,8 @@ const ContactForm = () => {
           name="email"
           id="Email"
           type="email"
+          value={formData.email}
+          onChange={handleInputChange}
           className="bg-gray-100 border border-gray text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
           placeholder="ola@bedriftsnavn.no"
           required
@@ -80,6 +108,8 @@ const ContactForm = () => {
         <textarea
           name="melding"
           rows={10}
+          value={formData.melding}
+          onChange={handleInputChange}
           id="Melding"
           className="bg-gray-100 border border-gray text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
           placeholder="Hei. Jeg vil gjerne..."
