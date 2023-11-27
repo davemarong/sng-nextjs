@@ -44,7 +44,7 @@ const ContactForm = () => {
     <form
       method="post"
       name="contact"
-      action="/"
+      action="/kontakt"
       className="max-w-4xl gap-6 flex flex-wrap"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
