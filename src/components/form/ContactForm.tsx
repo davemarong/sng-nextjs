@@ -44,11 +44,11 @@ const ContactForm = () => {
     <form
       method="post"
       name="contact"
-      // action="/kontakt/?success=true"
+      action="/"
       className="max-w-4xl gap-6 flex flex-wrap"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      onSubmit={handleFormSubmit}
+      // onSubmit={handleFormSubmit}
     >
       <input type="hidden" name="form-name" value="contact" />
 
