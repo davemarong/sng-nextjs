@@ -9,7 +9,7 @@ export default function Document() {
           name="contact"
           data-netlify="true"
           netlify-honeypot="bot-field"
-          action="/"
+          action="/kontakt"
           hidden
         >
           <input type="text" name="fornavn" />
