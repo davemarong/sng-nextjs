@@ -42,11 +42,11 @@ const ContactForm = () => {
   };
   return (
     <form
-      data-netlify="true"
       method="post"
       name="contact"
       className="max-w-4xl gap-6 flex flex-wrap"
-      netlify-honeypot="bot-field"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
       onSubmit={handleFormSubmit}
     >
       <input type="hidden" name="form-name" value="contact" />
