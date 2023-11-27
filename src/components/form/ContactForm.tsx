@@ -21,7 +21,7 @@ const ContactForm = () => {
     console.log(formData);
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch("/kontakt/?success=true", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
@@ -44,11 +44,11 @@ const ContactForm = () => {
     <form
       method="post"
       name="contact"
-      action="/kontakt/?success=true"
+      // action="/kontakt/?success=true"
       className="max-w-4xl gap-6 flex flex-wrap"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      // onSubmit={handleFormSubmit}
+      onSubmit={handleFormSubmit}
     >
       <input type="hidden" name="form-name" value="contact" />
 
