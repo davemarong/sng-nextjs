@@ -39,7 +39,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex-1 flex justify-end mt-8">
-          <PrimaryButton>Kontakt oss</PrimaryButton>
+          <Link href="/kontakt" className="w-52 hidden lg:block">
+            <PrimaryButton>Kontakt oss</PrimaryButton>
+          </Link>
         </div>
       </div>
       <div className="bg-gray-900 h-100 flex justify-between items-center px-20">

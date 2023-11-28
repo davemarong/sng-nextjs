@@ -1,22 +1,27 @@
+import LightPrimaryButton from "@/components/buttons/LightPrimaryButton";
+import OutlinedPrimaryButton from "@/components/buttons/OutlinedPrimaryButton";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import ContactForm from "@/components/form/ContactForm";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const Kontakt = () => {
+  const [copy, setCopy] = useState("Kopier sng@sng.no");
   return (
     <div>
       <div className="bg-nature3 bg-cover h-600 w-full flex justify-center items-center flex-col">
         <div className="backdrop-brightness-50 h-full w-full flex justify-center items-center flex-col">
-          <h1 className="text-white text-6xl  text-center">Kontakt oss</h1>
+          <h1 className="text-white text-4xl lg:text-5xl text-center">
+            Kontakt oss
+          </h1>
         </div>
       </div>
       <div className="flex flex-col bg-gray-100 lg:flex-row">
         <div className="flex-1 flex  flex-wrap justify-center items-center">
-          <div className="mb-20 mt-20 lg:mt-0">
-            <p className="text-lg w-full text-center mb-10">
-              Ønsker du å bli en av oss? Send oss en melding!
-            </p>
+          <div className="my-20 lg:mt-0 flex  flex-wrap justify-center">
+            {/* <p className="text-lg w-full text-center mb-10">
+              Ønsker du å bli en av oss? Send oss en melding med skjema --{">"}
+            </p> */}
             <Image
               className="rounded shadow m-auto"
               src="/contact.jpg"
@@ -24,6 +29,20 @@ const Kontakt = () => {
               width={300}
               alt=""
             />
+            <p className="text-lg w-full text-center my-10">
+              Send oss en mail direkte til{" "}
+              <span className="font-bold">sng@sng.no</span>
+            </p>
+
+            <button
+              className="transition-colors duration-200 rounded border-2 border-primary-500 text-black hover:bg-primary-700 active:bg-primary-900 hover:text-white hover:border-0 w-52 h-12 "
+              onClick={() => {
+                navigator.clipboard.writeText("sng@sng.no");
+                setCopy("Kopiert!");
+              }}
+            >
+              {copy}
+            </button>
           </div>
         </div>
         <div className="relative flex-1 flex justify-end lg:mr-40 h-800 bg-gray-100">

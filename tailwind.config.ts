@@ -39,6 +39,7 @@ const config: Config = {
         nature: "url('/nature.jpg')",
         nature2: "url('/nature2.jpg')",
         nature3: "url('/nature3.jpg')",
+        nature4: "url('/nature4.jpg')",
       },
     },
   },

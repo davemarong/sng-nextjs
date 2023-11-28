@@ -14,11 +14,11 @@ export const navItemsPublic = [
     path: "/grossister",
     color: "transparent",
   },
-  // {
-  //   label: "Om Oss",
-  //   path: "/om-oss",
-  //   color: "transparent",
-  // },
+  {
+    label: "Om Oss",
+    path: "/om-oss",
+    color: "transparent",
+  },
   {
     label: "Kontakt",
     path: "/kontakt",

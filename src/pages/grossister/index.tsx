@@ -20,9 +20,9 @@ const Grossister = () => {
   };
   return (
     <div>
-      <div className="bg-nature bg-cover flex justify-center items-center">
+      <div className="bg-nature4 bg-cover flex justify-center items-center">
         <div className="backdrop-brightness-50 py-40 px-10 h-full w-full flex gap-20 flex-wrap justify-center">
-          <p className="text-3xl text-white text-center w-full">
+          <p className="text-4xl lg:text-5xl text-white text-center w-full">
             Våre grossister
           </p>
           <div className="flex flex-wrap justify-center gap-20 max-w-4xl content-start">

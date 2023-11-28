@@ -6,7 +6,7 @@ import colors from "tailwindcss/colors";
 const Reviews = () => {
   return (
     <div className="my-20 mx-8">
-      <h2 className="text-center text-3xl pb-10">
+      <h2 className="text-center text-4xl pb-10">
         Vi tar vare på våre grossister
       </h2>
       <div className="flex gap-28 flex-col justify-center items-center lg:flex-row">

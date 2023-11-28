@@ -51,7 +51,9 @@ const ContactForm = () => {
       // onSubmit={handleFormSubmit}
     >
       <input type="hidden" name="form-name" value="contact" />
-
+      <p className="text-lg w-full text-center mb-2">
+        Ønsker du å bli en av oss?
+      </p>
       <div className="w-full">
         <label htmlFor="Fornavn">Fornavn</label>
         <input
