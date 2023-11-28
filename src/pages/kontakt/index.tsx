@@ -6,7 +6,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 const Kontakt = () => {
-  const [copy, setCopy] = useState("Kopier sng@sng.no");
+  const [copy, setCopy] = useState<any>(`Kopier sng@sng.no`);
   return (
     <div>
       <div className="bg-nature3 bg-cover h-600 w-full flex justify-center items-center flex-col">

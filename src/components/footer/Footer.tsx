@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col justify-evenly leading-9">
             <p className="text-gray-400">46807041</p>
-            <p className="text-gray-400">sng@sng.com</p>
+            <p className="text-gray-400">sng@sng.no</p>
             <p className="text-gray-400">25 Kongens gate, 0485 Oslo</p>
           </div>
         </div>
