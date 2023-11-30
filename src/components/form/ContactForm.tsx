@@ -121,7 +121,7 @@ const ContactForm = () => {
       </div>
       {loading && <Loading />}
       <button
-        className="transition-colors duration-200 rounded bg-primary-500 text-black hover:bg-primary-700 active:bg-primary-900 hover:text-white border-0 hover:border-0 w-52 h-12 "
+        className="transition-colors duration-200 rounded bg-primary-400 text-white hover:bg-primary-500 active:bg-primary-900 hover:text-white border-0 hover:border-0 w-52 h-12 "
         type="submit"
         // onClick={() => {
         // setLoading(true);

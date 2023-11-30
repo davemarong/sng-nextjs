@@ -16,7 +16,7 @@ const Kontakt = () => {
           </h1>
         </div>
       </div>
-      <div className="flex flex-col bg-gray-100 lg:flex-row">
+      <div className="flex flex-col bg-primary-100 lg:flex-row">
         <div className="flex-1 flex  flex-wrap justify-center items-center">
           <div className="my-20 lg:mt-0 flex  flex-wrap justify-center">
             {/* <p className="text-lg w-full text-center mb-10">
@@ -24,18 +24,17 @@ const Kontakt = () => {
             </p> */}
             <Image
               className="rounded shadow m-auto"
-              src="/contact.jpg"
-              height={300}
-              width={300}
+              src="/kontakt.jpg"
+              height={500}
+              width={500}
               alt=""
             />
             <p className="text-lg w-full text-center my-10">
-              Send oss en mail direkte til{" "}
-              <span className="font-bold">sng@sng.no</span>
+              Send oss en mail til <span className="font-bold">sng@sng.no</span>
             </p>
 
             <button
-              className="transition-colors duration-200 rounded border-2 border-primary-500 text-black hover:bg-primary-700 active:bg-primary-900 hover:text-white hover:border-0 w-52 h-12 "
+              className="transition-colors duration-200 rounded border-2 border-primary-700 text-black hover:bg-primary-700 active:bg-primary-900 hover:text-white hover:border-0 w-52 h-12 "
               onClick={() => {
                 navigator.clipboard.writeText("sng@sng.no");
                 setCopy("Kopiert!");
@@ -45,7 +44,7 @@ const Kontakt = () => {
             </button>
           </div>
         </div>
-        <div className="relative flex-1 flex justify-end lg:mr-40 h-800 bg-gray-100">
+        <div className="relative flex-1 flex justify-end lg:mr-40 h-800 bg-primary-100">
           <div className="-top-24 lg:absolute w-full lg:max-w-2xl p-12 m-6 lg:ml-12 bg-white border border-gray rounded-lg shadow-2xl ">
             <ContactForm />
           </div>

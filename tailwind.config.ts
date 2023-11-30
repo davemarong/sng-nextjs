@@ -21,17 +21,6 @@ const config: Config = {
           800: "#243265",
           900: "#121932",
         },
-        black: {
-          100: "#cccce0",
-          200: "#9999c0",
-          300: "#6667a1",
-          400: "#333481",
-          500: "#000162",
-          600: "#00014e",
-          700: "#00013b",
-          800: "#000027",
-          900: "#000014",
-        },
       },
       backgroundImage: {
         hero: "url('/hero.jpg')",
@@ -40,8 +29,20 @@ const config: Config = {
         nature2: "url('/nature2.jpg')",
         nature3: "url('/nature3.jpg')",
         nature4: "url('/nature4.jpg')",
+        nature5: "url('/nature5.jpg')",
+        nature6: "url('/nature6.jpg')",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        bebas: ["Bebas Neue", " sans-serif"],
+        explora: ["Explora", "serif"],
       },
     },
+    // fontFamily: {
+    //   sans: ["Graphik", "sans-serif"],
+    //   serif: ["Merriweather", "serif"],
+    // },
   },
   plugins: [],
 };

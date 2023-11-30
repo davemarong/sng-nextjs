@@ -6,17 +6,22 @@ import Logo from "../logo/Logo";
 import CircleIcon from "@mui/icons-material/Circle";
 import PrimaryButton from "../buttons/PrimaryButton";
 import { useRouter } from "next/router";
+import LightPrimaryButton from "../buttons/LightPrimaryButton";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import PhoneIcon from "@mui/icons-material/Phone";
+import HomeIcon from "@mui/icons-material/Home";
+import PlaceIcon from "@mui/icons-material/Place";
 
 const Footer = () => {
   const path = useRouter().pathname;
 
   return (
     <>
-      <div className="bg-gray-800  flex flex-col px-8 items-center justify-between py-8 lg:px-20 lg:flex-row">
-        <div className="flex-1">
+      <div className="bg-primary-900  flex flex-col px-8 items-center justify-between py-8 lg:px-20 lg:flex-row">
+        <Link href="/" className="grow-0 lg:w-52">
           <Logo />
-        </div>
-        <div className="flex flex-col flex-5 pt-8 items-center gap-10 lg:gap-48 lg:flex-row">
+        </Link>
+        <div className="flex flex-col pt-8 items-center gap-10">
           <div className="flex flex-row justify-center">
             {navItemsPublic.map((item) => {
               return (
@@ -32,15 +37,36 @@ const Footer = () => {
               );
             })}
           </div>
-          <div className="flex flex-col justify-evenly leading-9">
-            <p className="text-gray-400">46807041</p>
-            <p className="text-gray-400">sng@sng.no</p>
-            <p className="text-gray-400">25 Kongens gate, 0485 Oslo</p>
-          </div>
+          <ul className="flex flex-col justify-evenly leading-9 lg:gap-9 lg:flex-row">
+            <li className="text-gray-400 flex">
+              <span className="flex items-center">
+                <PhoneIcon fontSize="small" className="text-gray-400" />
+              </span>
+              &nbsp;
+              <p> 46807041</p>
+            </li>
+            <li className="text-gray-400 flex">
+              <span className="flex items-center">
+                <AlternateEmailIcon
+                  fontSize="small"
+                  className="text-gray-400"
+                />
+              </span>
+              &nbsp;
+              <p> sng@sng.no</p>
+            </li>
+            <li className="text-gray-400 flex">
+              <span className="flex items-center">
+                <PlaceIcon fontSize="small" className="text-gray-400" />
+              </span>
+              &nbsp;
+              <p> 25 Kongens gate, 0485 Oslo</p>
+            </li>
+          </ul>
         </div>
-        <div className="flex-1 flex justify-end mt-8">
+        <div className="flex justify-end mt-8 lg:w-52">
           <Link href="/kontakt" className="w-52 hidden lg:block">
-            <PrimaryButton>Kontakt oss</PrimaryButton>
+            <LightPrimaryButton>Kontakt oss</LightPrimaryButton>
           </Link>
         </div>
       </div>

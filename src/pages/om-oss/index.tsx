@@ -3,7 +3,7 @@ import React from "react";
 const OmOss = () => {
   return (
     <div>
-      <div className="bg-nature2 bg-black bg-cover h-600 w-full flex justify-center items-center flex-col">
+      <div className="bg-nature5 bg-black bg-cover h-600 w-full flex justify-center items-center flex-col">
         <div className="backdrop-brightness-50 h-full w-full flex justify-center items-center flex-col">
           <h1 className="text-white text-4xl lg:text-5xl text-center px-10">
             Fordi SNG mener du er verdt det
@@ -11,7 +11,7 @@ const OmOss = () => {
         </div>
       </div>
       <div className="mx-10 2xl:mx-40">
-        <h2 className="text-center text-2xl mt-28 mb-16">
+        <h2 className="text-center text-2xl mt-28 mb-8">
           Scandinavian Nasar Group
         </h2>
         <div className="flex justify-center">
@@ -27,14 +27,14 @@ const OmOss = () => {
         </div>
         <div className="flex-col 2xl:flex-row justify-center flex my-14 gap-16 2xl:my-28 2xl:gap-28 2xl:items-center">
           <Image
-            src="/omoss1.jpg"
+            src="/omoss3.jpg"
             height={600}
             width={600}
             alt=""
             className="m-auto rounded"
           />
           <div>
-            <h2 className="text-center text-2xl mb-8">Hva gjør vi?</h2>
+            <h2 className="text-center text-2xl mb-8">Hva gjør SNG?</h2>
             <div className="flex justify-center ">
               <p className="max-w-xl text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -50,7 +50,7 @@ const OmOss = () => {
         </div>
         <div className="flex-col-reverse 2xl:flex-row flex py-14 gap-16 2xl:py-28 2xl:gap-28 2xl:items-center ">
           <div>
-            <h2 className="text-center text-2xl mb-8">Vår historie</h2>
+            <h2 className="text-center text-2xl mb-8">Historien til SNG</h2>
             <div className="flex justify-center">
               <p className="max-w-xl text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

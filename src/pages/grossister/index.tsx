@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Grossister as GrossisterData } from "@/data/Data";
 import LaunchIcon from "@mui/icons-material/Launch";
-import PhoneIcon from "@mui/icons-material/Phone";
-import HomeIcon from "@mui/icons-material/Home";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import Link from "next/link";
 import Image from "next/image";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import PhoneIcon from "@mui/icons-material/Phone";
+import HomeIcon from "@mui/icons-material/Home";
 import PlaceIcon from "@mui/icons-material/Place";
 import SearchIcon from "@mui/icons-material/Search";
 const Grossister = () => {
@@ -51,16 +51,20 @@ const Grossister = () => {
         </p>
       </div>
       <div className="flex flex-wrap justify-center">
-        {/* <p className="w-full text-center pb-2">Søk etter våre grossister</p> */}
-        <input
-          onChange={handleFilter}
-          id="Fornavn"
-          type="text"
-          className="bg-gray-100 border border-gray-300 shadow text-gray-900 text-lg rounded-lg focus:ring-blue-500 focus:border-blue-500 block h-16 w-full max-w-sm lg:max-w-xl p-2.5 "
-          placeholder="Frukt og grønt....."
-          required
-        />
-        {/* <SearchIcon className="text-5xl" /> */}
+        <p className="w-full text-lg text-center pb-2">
+          Søk etter våre grossister
+        </p>
+        <search className="relative w-96">
+          <SearchIcon className="text-3xl text-gray-400 top-4 left-2 absolute" />
+          <input
+            type="search"
+            onChange={handleFilter}
+            id="search"
+            className="bg-gray-100 border border-gray-300 shadow text-gray-900 text-lg rounded-lg h-16 w-full max-w-sm lg:max-w-xl p-2.5 block ps-10 focus:ring-blue-500 focus:border-blue-500"
+            placeholder="Frukt og grønt....."
+            required
+          />
+        </search>
       </div>
       <div className="flex flex-wrap justify-evenly m-16 gap-16 lg:gap-10 lg:m-20">
         {filteredData.map((item) => {

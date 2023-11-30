@@ -15,7 +15,7 @@ export const navItemsPublic = [
     color: "transparent",
   },
   {
-    label: "Om Oss",
+    label: "Om oss",
     path: "/om-oss",
     color: "transparent",
   },

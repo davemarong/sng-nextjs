@@ -8,10 +8,10 @@ const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const path = useRouter().pathname;
   return (
-    <nav className="flex items-center justify-between flex-wrap p-2 px-6 bg-gray-800 lg:px-20 ">
-      <div className="w-36 lg:w-52 mb-4">
+    <nav className="flex items-center justify-between flex-wrap p-2 px-6 bg-primary-900 lg:px-20 ">
+      <Link href="/" className="w-36 lg:w-52 mb-4">
         <Logo />
-      </div>
+      </Link>
       <div className="block sm:hidden">
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -54,7 +54,7 @@ const Nav = () => {
         })}
       </div>
       <Link href="/kontakt" className="w-52 hidden lg:block">
-        <LightPrimaryButton>Kontakt Oss</LightPrimaryButton>
+        <LightPrimaryButton>Kontakt oss</LightPrimaryButton>
       </Link>
     </nav>
   );
