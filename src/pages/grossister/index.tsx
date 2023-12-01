@@ -9,15 +9,15 @@ import HomeIcon from "@mui/icons-material/Home";
 import PlaceIcon from "@mui/icons-material/Place";
 import SearchIcon from "@mui/icons-material/Search";
 const Grossister = () => {
-  const [filteredData, setFilteredData] = useState(GrossisterData);
-  const handleFilter = (e: any) => {
-    const filtered = GrossisterData.filter((item) =>
-      item.title
-        .toLocaleLowerCase()
-        .includes(e.target.value.toLocaleLowerCase())
-    );
-    setFilteredData(filtered);
-  };
+  // const [filteredData, setFilteredData] = useState(GrossisterData);
+  // const handleFilter = (e: any) => {
+  //   const filtered = GrossisterData.filter((item) =>
+  //     item.title
+  //       .toLocaleLowerCase()
+  //       .includes(e.target.value.toLocaleLowerCase())
+  //   );
+  //   setFilteredData(filtered);
+  // };
   return (
     <div>
       <div className="bg-nature4 bg-cover flex justify-center items-center">
@@ -36,21 +36,36 @@ const Grossister = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center my-16">
+      <div className="flex flex-col gap-4 items-center justify-center my-16">
         <p className="max-w-xl mx-10 lg:mx-0">
-          <span className="text-primary-600 font-bold text-xl">
-            Vi har et bredt nettverk{" "}
-          </span>
+          {/* 
           av pålitelige grossister fra hele landet som utgjør ryggraden i vår
           virksomhet. Disse verdifulle samarbeidspartnerne bidrar til mangfoldet
           og kvaliteten av produktene vi tilbyr. Vi setter stor pris på det
           gjensidige samarbeidet, og sammen streber vi mot felles suksess og
           forbedring. Med dedikerte partnere og et sterkt team arbeider vi for å
           levere kvalitetsprodukter og tjenester, og vi er takknemlige for
-          muligheten til å skape positive endringer sammen i Norge.
+          muligheten til å skape positive endringer sammen i Norge. */}
+          <span className="text-primary-600 font-bold text-xl">
+            I dag består SNG av 9 grossister
+          </span>
+          , og vi er i vekst. Våre grossister er lokalisert rundt omkring i
+          Norge med et sterkt fotfeste på østlandet. Vi ser verdien i de små
+          frittstående grossistene og deres entreprenørskap i storhusholdnings
+          markedet og derfor har vi <u>tatt på oss oppgaven å styrke dem</u>.
         </p>
+        <p className="max-w-xl mx-10 lg:mx-0">
+          Våre grossister er fullsortimentgrossister, med et bredt vare
+          kategorier, innen Tørrvarer, Øvrig kolonial, Bake-off Ost & meieri og
+          Non food.
+        </p>
+        {/* <div className="max-w-xl sm:w-full mx-10 lg:mx-0"> */}
+        <p className="max-w-xl sm:w-full mx-10 sm:mx-0 mr-auto text-left">
+          Under ser du oversikten til våre grossister.
+        </p>
+        {/* </div> */}
       </div>
-      <div className="flex flex-wrap justify-center">
+      {/* <div className="flex flex-wrap justify-center">
         <p className="w-full text-lg text-center pb-2">
           Søk etter våre grossister
         </p>
@@ -65,9 +80,9 @@ const Grossister = () => {
             required
           />
         </search>
-      </div>
+      </div> */}
       <div className="flex flex-wrap justify-evenly m-16 gap-16 lg:gap-10 lg:m-20">
-        {filteredData.map((item) => {
+        {GrossisterData.map((item) => {
           return (
             <div
               key={item.id}
@@ -117,9 +132,9 @@ const Grossister = () => {
             </div>
           );
         })}
-        {filteredData.length == 0 && (
+        {/* {filteredData.length == 0 && (
           <p className="text-lg">Vi finner ingen grossister her...</p>
-        )}
+        )} */}
       </div>
       <hr className="w-64 h-1 mx-auto my-4 bg-primary-500 border-0 rounded md:my-10" />
       <p className="text-center text-lg pb-4">

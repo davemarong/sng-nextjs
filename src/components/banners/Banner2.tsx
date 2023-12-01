@@ -8,31 +8,36 @@ const Banner2 = () => (
     <div className="flex flex-col gap-14 lg:gap-28 my-12 ml-7 lg:flex-row">
       <div className="flex-1">
         <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
-          Et flott arbeidsmiljø
+          Hvorfor SNG?
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 text-base max-w-xs">
-          Vi vil ikke at du skal grue deg til mandager eller til å komme på jobb
-          daglig. Derfor skaper vi et trygt og produktivt arbeidsmiljø der du
-          kan oppnå ditt fulle potensiale.
+          Vi <u>identifiserte</u>&nbsp; at det var en rekke grossister som ikke
+          var organiserte, disse hadde en fellesnevner;{" "}
+          <u>dyktige entreprenører</u>&nbsp; som jobbet hardt uten et
+          innkjøpsorgan, vi ønsker å <u>representere dem</u>.
         </p>
       </div>
       <div className="flex-1">
         <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
-          Konkurransedyktige lønninger
+          Hva gjør vi?
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 max-w-xs">
-          Her hos SNG betaler vi deg det du fortjener eller enda mer. Så lenge
-          du hjelper oss med å nå våre mål, vil vi fortsette å forandre verden
-          sammen.
+          SNG har som mål å <u>effektivisere innkjøpsprosesser</u>&nbsp; for
+          frittstående matgrossister. Ved å tilby koordinerte innkjøp søker vi å
+          etablere en <u>gruppering</u>&nbsp; som gir våre partnere&nbsp;
+          <u>konkurransefordeler og økt lønnsomhet</u>.
         </p>
       </div>
       <div className="flex-1">
         <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
-          Fordeler for ansatte
+          Grossister{" "}
         </h4>
         <p className="text-left text-gray-500 leading-8 pt-2 text-base max-w-xs">
-          Vi tilbyr også fordeler som overtidskompensasjon, betalt fri, og
-          minstelønn.
+          <u>Historikken</u>&nbsp; viser at våre grossister er viktige for
+          storhusholdnings markedet, selv med svekket innkjøps vilkår leverer de
+          vekst og gode resultater. Dette tror vi er grunnet deres mindset med
+          &nbsp;<u>høye service nivå og entreprenørskap</u>&nbsp; hvor kunden er
+          i focus. Dette er noe vi heier på.
         </p>
       </div>
     </div>

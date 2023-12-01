@@ -34,7 +34,7 @@ const Nav = () => {
         </button>
       </div>
       <div
-        className={`w-full flex flex-col gap-6 mt-4 sm:flex-row sm:mt-0 sm:justify-center flex-grow sm:flex sm:items-center sm:w-auto ${
+        className={`w-full flex flex-col gap-6 mt-4 sm:flex-row sm:mt-0 sm:justify-end sm:gap-12 flex-grow sm:flex sm:items-center sm:w-auto ${
           isOpen ? "flex" : "hidden"
         }`}
       >
@@ -53,9 +53,9 @@ const Nav = () => {
           );
         })}
       </div>
-      <Link href="/kontakt" className="w-52 hidden lg:block">
+      {/* <Link href="/kontakt" className="w-52 hidden lg:block">
         <LightPrimaryButton>Kontakt oss</LightPrimaryButton>
-      </Link>
+      </Link> */}
     </nav>
   );
 };
