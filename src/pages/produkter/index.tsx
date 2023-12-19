@@ -2,20 +2,11 @@ import React, { useEffect, useState } from "react";
 import useRQResource from "@/utils/query/useRQResource";
 import Products from "@/components/products/Products";
 import Split1to3View from "@/components/layout/Split1to3View";
-import { Button, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 
-import {
-  QueryClient,
-  keepPreviousData,
-  useInfiniteQuery,
-  useQuery,
-  useQueryClient,
-} from "@tanstack/react-query";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
 import Buttons from "@/components/products/Buttons";
 import CircularProgress from "@mui/material/CircularProgress";
-import ListTreeView from "@/components/treeView/ListTreeView";
-import CustomTreeView from "@/components/treeView/CustomTreeView";
-import { Tree } from "react-arborist";
 import TreeViewComp from "@/components/treeView/TreeViewComp";
 import { request } from "@/utils/query/axios-extend";
 

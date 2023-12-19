@@ -13,9 +13,9 @@ export default function Home() {
     <>
       <HeroImage />
       <Banner1 />
-      <Banner2 />
+      {/* <Banner2 />
       <Banner3 />
-      <Reviews />
+      <Reviews /> */}
     </>
   );
 }
