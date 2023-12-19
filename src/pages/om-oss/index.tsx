@@ -40,39 +40,48 @@ const OmOss = () => {
           </div>
         </div>
       </div> */}
-      <div className="flex flex-col gap-14 lg:gap-28 my-40 ml-7 lg:flex-row">
+      <div className="flex flex-col gap-14 xl:gap-28 my-40 xl:flex-row">
         <div className="flex-1">
-          <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
+          <h4 className="text-xl font-medium text-primary-600 text-left mx-10 md:mx-20 xl:mx-0  xl:max-w-sm">
             Hvorfor SNG?
           </h4>
-          <p className="text-left text-gray-500 leading-8 pt-2 text-base max-w-xs">
-            Vi <u>identifiserte</u>&nbsp; at det var en rekke grossister som
-            ikke var organiserte, disse hadde en fellesnevner;{" "}
-            <u>dyktige entreprenører</u>&nbsp; som jobbet hardt uten et
-            innkjøpsorgan, vi ønsker å <u>representere dem</u>.
+          <p className="text-left text-gray-500 leading-8 pt-2 text-base mx-10 md:mx-20 xl:mx-0  xl:max-w-sm">
+            Vår reise begynte med en innsikt om at mange dyktige entreprenører i
+            bransjen manglet organisering og et dedikert innkjøpsorgan. Dette
+            ble vår drivkraft for å etablere SNG og gi dem en representant som
+            kunne styrke deres posisjon og bidra til en mer strukturert og
+            effektiv forretningsdrift. Vårt mål er å fungere som deres
+            representant, styrke deres posisjon og legge til rette for en mer
+            strukturert og effektiv forretningsdrift. Gjennom vårt engasjement
+            håper vi å skape et miljø der disse dyktige entreprenørene kan
+            trives og utvikle seg
           </p>
         </div>
         <div className="flex-1">
-          <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
-            Hva gjør vi?
+          <h4 className="text-xl font-medium text-primary-600 text-left mx-10 md:mx-20 xl:mx-0  xl:max-w-sm">
+            Hva gjør SNG?
           </h4>
-          <p className="text-left text-gray-500 leading-8 pt-2 max-w-xs">
-            SNG har som mål å <u>effektivisere innkjøpsprosesser</u>&nbsp; for
-            frittstående matgrossister. Ved å tilby koordinerte innkjøp søker vi
-            å etablere en <u>gruppering</u>&nbsp; som gir våre partnere&nbsp;
-            <u>konkurransefordeler og økt lønnsomhet</u>.
+          <p className="text-left text-gray-500 leading-8 pt-2 mx-10 md:mx-20 xl:mx-0  xl:max-w-sm">
+            SNG har som mål å effektivisere innkjøpsprosesser for frittstående
+            matgrossister. Ved å tilby koordinerte innkjøp søker vi å etablere
+            en gruppering som gir våre partnere betydelige konkurransefordeler
+            og økt lønnsomhet. Gjennom vårt dedikerte arbeid med å samordne
+            innkjøp legger vi til rette for optimal ressursutnyttelse og
+            kostnadseffektivitet.
           </p>
         </div>
         <div className="flex-1">
-          <h4 className="text-xl font-medium text-primary-600 text-left max-w-xs">
-            Grossister{" "}
+          <h4 className="text-xl font-medium text-primary-600 text-left mx-10 md:mx-20 xl:mx-0  xl:max-w-sm">
+            Våre løfter til grossister{" "}
           </h4>
-          <p className="text-left text-gray-500 leading-8 pt-2 text-base max-w-xs">
-            <u>Historikken</u>&nbsp; viser at våre grossister er viktige for
-            storhusholdnings markedet, selv med svekket innkjøps vilkår leverer
-            de vekst og gode resultater. Dette tror vi er grunnet deres mindset
-            med &nbsp;<u>høye service nivå og entreprenørskap</u>&nbsp; hvor
-            kunden er i focus. Dette er noe vi heier på.
+          <p className="text-left text-gray-500 leading-8 pt-2 text-base mx-10 md:mx-20 xl:mx-0  xl:max-w-sm">
+            Historikken viser at våre grossister spiller en avgjørende rolle i
+            storhusholdningsmarkedet. Til tross for utfordrende innkjøpsvilkår,
+            fortsetter de å levere imponerende vekst og gode resultater. Vi
+            mener at deres suksess skyldes et fortreffelig servicenivå og en
+            gründermentalitet, hvor kundetilfredshet er i fokus. Vi forplikter
+            oss til å gi dem verktøyene og støtten de trenger for å opprettholde
+            sin markedsposisjon og bane vei for fremtidig vekst.
           </p>
         </div>
       </div>

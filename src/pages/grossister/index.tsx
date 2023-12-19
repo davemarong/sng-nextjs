@@ -86,7 +86,7 @@ const Grossister = () => {
           return (
             <div
               key={item.id}
-              className="w-80 lg:w-96 gap-10 lg:my-10 leading-10 rounded flex items-start"
+              className="w-80 lg:w-96 gap-10 lg:my-10 ml-24 leading-10 rounded flex items-start"
             >
               <div className="">
                 <div className="font-medium text-lg text flex justify-between items-center gap-2">
@@ -126,9 +126,9 @@ const Grossister = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <Image src={item.logo} height={100} width={100} alt="" />
-              </div>
+              </div> */}
             </div>
           );
         })}
@@ -137,9 +137,9 @@ const Grossister = () => {
         )} */}
       </div>
       <hr className="w-64 h-1 mx-auto my-4 bg-primary-500 border-0 rounded md:my-10" />
-      <p className="text-center text-lg pb-4">
+      {/* <p className="text-center text-lg pb-4">
         Vi har grossister over hele landet. Sjekk ut på kartet!
-      </p>
+      </p> */}
       <div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5044034.583557927!2d8.640902270374413!3d65.39755676701569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x461268458f4de5bf%3A0xa1b03b9db864d02b!2sNorway!5e0!3m2!1sen!2sno!4v1700776252418!5m2!1sen!2sno"
